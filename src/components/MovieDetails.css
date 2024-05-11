@@ -1,0 +1,40 @@
+.movie-details {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h2{
+    color: black;
+  }
+  
+  p{
+    color: black;
+  }
+  .movie-info {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .details p {
+    margin: 0 0 10px;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    padding: 20px;
+    color: #ff0000;
+  }
+  

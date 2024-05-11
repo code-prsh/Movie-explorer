@@ -66,6 +66,7 @@ function MovieSearch() {
   
   useEffect(() => {
     getMovieRequest(page);
+    // eslint-disable-next-line
   }, [page, genre]);
 
   //for fetching next pages

@@ -16,7 +16,7 @@ function MovieDetails() {
 
       try {
         //search in api by id as OMDB supports only by ID AND TITLE SEARCHES
-        const response = await axios.get(`http://www.omdbapi.com/?i=${id}&apikey=23fd0320`);
+        const response = await axios.get(`http://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_OMDB_API_KEY}`);
         if (response.data.Response === 'True') {
           setMovie(response.data);
         } else {

@@ -32,9 +32,9 @@ function MovieSearch() {
       let url;
       // if nothing is on search bar it will display movie having batman in their title
       if (query.trim() === '') {
-        url = `https://www.omdbapi.com/?s=batman&type=movie&apikey=23fd0320&page=${page}`;
+        url = `https://www.omdbapi.com/?s=batman&type=movie&apikey=${process.env.REACT_APP_OMDB_API_KEY}&page=${page}`;
       } else {
-        url = `https://www.omdbapi.com/?s=${query}&apikey=23fd0320&page=${page}`;
+        url = `https://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_OMDB_API_KEY}&page=${page}`;
       }
   
       const response = await axios.get(url);
